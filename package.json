@@ -1,0 +1,38 @@
+{
+  "name": "react-portfolio-w-backend",
+  "version": "1.0.0",
+  "description": "react app w/ backend server",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
+    "reactstrap": "^8.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "set NODE_ENV=production && nodemon server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "win:prod": "set NODE_ENV=production && nodemon server.js",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medricr/react-portfolio-w-backend.git"
+  },
+  "author": "Medric Riley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medricr/react-portfolio-w-backend/issues"
+  },
+  "homepage": "https://github.com/medricr/react-portfolio-w-backend#readme"
+}
