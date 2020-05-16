@@ -2,7 +2,7 @@ import React from 'react';
 import skellyboi from '../../assets/Skelly.png'
 
 
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 
 class ProjectCard extends React.Component {
 	render() {
