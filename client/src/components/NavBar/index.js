@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavLink, NavbarBrand, Collapse, NavbarToggler, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
+import {Navbar, Nav, NavbarBrand, Collapse, NavbarToggler, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
 import {Link} from 'react-router-dom';
 
 
@@ -26,15 +26,11 @@ class NavBar extends React.Component {
 								More
 							</DropdownToggle>
 							<DropdownMenu right>
-								<DropdownItem>
-									<NavLink>
-										<Link className="nav-link" to='/projects'>Projects</Link>
-									</NavLink>
+								<DropdownItem>									
+										<Link className="nav-link" to='/projects'>Projects</Link>									
 								</DropdownItem>
-								<DropdownItem>
-									<NavLink>
+								<DropdownItem>									
 										<Link className="nav-link" to='/contact'>Contact</Link>
-									</NavLink>
 								</DropdownItem>
 							</DropdownMenu>
 						</UncontrolledDropdown>

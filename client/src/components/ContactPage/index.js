@@ -1,5 +1,9 @@
 import React from 'react';
 
+import API from '../../API';
+
+
+
 class ContactPage extends React.Component {
 
 	// state goes here
@@ -20,6 +24,17 @@ class ContactPage extends React.Component {
 		});
 	}
 
+	// sendEmail function
+	sendEmail = () => {
+		API.sendEmail({
+			sender_email: this.state.sender_email,
+			email_subject: this.state.email_subject,
+			email_body: this.state.email_body
+		}).then((result)=> {
+			console.log(result);
+		})
+	}
+
 	render(){
 		return(
 			<div className='container'>
@@ -29,24 +44,24 @@ class ContactPage extends React.Component {
 							<form>
 								{/* Sender return email input */}
 								<div className='form-group'>
-									<label for='sender_email'>Email Address</label>
+									<label htmlFor='sender_email'>Email Address</label>
 									<input type='email' className='form-control' id='sender_email' name='sender_email' placeholder='Enter your Email Adress' onChange={this.handleInputChange}/>
 									<small id='email-help' className='form-text text-muted'>This is the email address which will be sed to reply to your message</small>
 								</div>
 								{/* Sender subject email input */}
 								<div className='form-group'>
-									<label for='email_subject'>Subject</label>
+									<label htmlFor='email_subject'>Subject</label>
 									<input type='text' className='form-control' id='email_subject' name='email_subject' placeholder='Email Subject' onChange={this.handleInputChange} />
 									<small id='subject-help' className='form-text text-muted'>This subject will be placed in the subject field of the email</small>
 								</div>
 								{/* Sender body email input */}
 								<div className='form-group'>
-									<label for='email_body'>Body</label>
+									<label htmlFor='email_body'>Body</label>
 									<textarea type='text' className='form-control' id='email_body' name='email_body' placeholder='Email Body' rows='5' onChange={this.handleInputChange}/>
 									<small id='body-help' className='form-text text-muted'>Please include any information you would like to be sent in the final email</small>
 								</div>
 								{/* onclick take information from form, package it into request, and hit the nodemailer route */}
-								<button type='submit' className='btn btn-primary'>Send</button>
+								<button type='submit' className='btn btn-primary' onClick={this.sendEmail}>Send</button>
 							</form>
 						</div>
 					</div>
