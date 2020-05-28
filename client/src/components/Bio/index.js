@@ -19,21 +19,18 @@ class Bio extends React.Component {
 							{/* Technical about me secion, skills, interests, etc */}
 							<img href="#" src={skelly} alt='placeholder' height='300' width='300' className="rounded float-left mr-3"/>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum blandit sapien, eu vestibulum quam ullamcorper at. Vestibulum vel pharetra massa. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis erat a efficitur feugiat. Curabitur maximus est tempus justo sollicitudin, ac feugiat neque condimentum. Aenean consequat euismod ipsum, eu tempor nulla.
+								Welcome! My name is Medric Riley, a San Francisco Bay Area based Web developr blablablahblahablhabhlbha
 							</p>
 							<br />
 							<p>
-								Quisque fringilla diam mattis tellus tincidunt posuere. Donec egestas vitae erat id ultricies. Vestibulum semper orci at tempor vestibulum. Quisque augue risus, placerat non dapibus ac, vehicula a libero. Fusce porta, metus quis scelerisque aliquet, nisi diam hendrerit libero, et rhoncus metus lectus sed metus. Cras pulvinar ligula sed dolor tempor aliquet. Fusce convallis vitae eros sit amet fringilla. Curabitur in laoreet dolor, in convallis odio.
+								My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. 
 							</p>
 							<br />
-							<p>
-								Cras fringilla vestibulum lacus ut tincidunt. Maecenas ac sodales justo. Praesent laoreet placerat dolor quis feugiat. Donec facilisis lorem eu odio mollis iaculis. Etiam lobortis auctor posuere. Cras elementum rhoncus elit ac laoreet. Duis facilisis congue ante eu viverra.
-							</p>
 							{/* More personality driven aboutme section, interests, hobbies, goals, etc */}
 							<hr />
 							<img href="#" src={skelly} alt='placeholder' height='300' width='300' className='rounded float-right mr-3' />
 							<p>
-								Nulla auctor, turpis faucibus ultricies molestie, lectus ex iaculis lorem, non lacinia turpis ipsum id massa. In rhoncus finibus sollicitudin. Aliquam et magna consequat, laoreet dui vitae, faucibus ante. Mauris tincidunt eu sem vel commodo. Nam felis turpis, mollis sit amet dictum et, interdum a massa. Etiam ullamcorper odio id libero lobortis facilisis. Sed velit erat, rhoncus vel mauris a, porttitor congue odio. Phasellus ac laoreet lorem. Ut purus mauris, elementum in lorem et, sagittis malesuada enim.
+								When not working on personal projects, or attempting to learn a new skill (you what?)
 							</p>
 							<br />
 							<p>

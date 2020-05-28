@@ -26,9 +26,9 @@ class ProjectGallery extends React.Component {
 								</div>
 								<div className="col-md-4">
 									<ProjectCard
-										projectTitle="placeholder title"
-										projectSubtitle="placeholder subtitle"
-										projectDescription="project description placeholder text this will be much more meaningful im sure"
+										projectTitle="MERN Boilerplate"
+										projectSubtitle="A set of boilerplate code for a MERN stack, including simple user authentication and CRUD functionality"
+										projectDescription="This set of code is designed as a starting point for a full stack web application, and serves as a starting point for any app which utilizes a MongoDB database, Express, React, and Node. In addition, the project contains a very simply user authentication system using Passport.js, and includes simple routes for the creation, updating, retrieval, and deletion of simple 'notes', which are tied to the user's profile via collection association in MongoDB."
 									/>
 								</div>
 							</div>
