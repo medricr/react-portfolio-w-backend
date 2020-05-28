@@ -21,7 +21,7 @@ app.post('/contact', (req, res)=> {
 		service: 'gmail',
 		auth: {
 			user: 'medric.porfolio@gmail.com',
-			pass: 'password'
+			pass: 'Augu5td4wn'
 		}
 
 	});
