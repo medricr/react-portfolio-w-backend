@@ -32,6 +32,21 @@ class ProjectGallery extends React.Component {
 									/>
 								</div>
 							</div>
+							<div className='row'>
+								<div className='col-md-4'>
+									<ProjectCard 
+										projectTitle="Mythology Trivia"
+										projectSubtitle="An API based trivia game"
+										projectDescription="This simple class project uses API calls to generate questoins and there respective answers, allowing the user to have a different set (and order) of questions each time the game is played."
+									/>
+								</div>
+								<div className='col-md-4'>
+									<ProjectCard />
+								</div>
+								<div className='col-md-4'>
+									<ProjectCard />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

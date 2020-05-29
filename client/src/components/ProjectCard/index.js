@@ -2,7 +2,7 @@ import React from 'react';
 import skellyboi from '../../assets/Skelly.png'
 
 
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardLink} from 'reactstrap';
 
 class ProjectCard extends React.Component {
 	render() {
@@ -13,6 +13,7 @@ class ProjectCard extends React.Component {
 						<CardTitle>{this.props.projectTitle}</CardTitle>
 						<CardSubtitle>{this.props.projectSubtitle}</CardSubtitle>
 						<CardText>{this.props.projectDescription}</CardText>
+						<CardLink href={this.props.projectLink}>View Project</CardLink>
 						{/* <Button>Press Me</Button> */}
 					</CardBody>
 			</Card>
