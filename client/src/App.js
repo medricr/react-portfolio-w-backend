@@ -9,7 +9,7 @@ import Bio from './components/Bio';
 import ProjectGallery from './components/ProjectGallery';
 import ContactPage from './components/ContactPage';
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 
 class App extends React.Component {

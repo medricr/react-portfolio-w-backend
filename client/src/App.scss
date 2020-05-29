@@ -1,0 +1,41 @@
+// Pallette One
+$turqoise-green: #B8D8BA;
+$champagne-pink: #FCE4D8;
+$rich-black: #07393C;
+$independance: #5D576B;
+$middle-blue: #90DDF0;
+
+// Pallette Two
+$orange-soda: #F55D3E;
+$middle-grey: #878E88;
+$jonquil: #F7CB15;
+$white: #FFFFFF;
+$dark-skyblue: #76BED0;
+
+
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09D3AC;
+}
+
+#projectRow {
+	margin-bottom: 50px;
+}

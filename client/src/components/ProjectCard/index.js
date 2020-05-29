@@ -1,8 +1,9 @@
 import React from 'react';
 import skellyboi from '../../assets/Skelly.png'
 
+import ProjectModal from '../ProjectModal';
 
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardLink} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardLink, Button} from 'reactstrap';
 
 class ProjectCard extends React.Component {
 	render() {
@@ -12,9 +13,14 @@ class ProjectCard extends React.Component {
 					<CardBody>
 						<CardTitle>{this.props.projectTitle}</CardTitle>
 						<CardSubtitle>{this.props.projectSubtitle}</CardSubtitle>
-						<CardText>{this.props.projectDescription}</CardText>
-						<CardLink href={this.props.projectLink}>View Project</CardLink>
-						{/* <Button>Press Me</Button> */}
+						{/* <CardText  id='card-text' className='card-text'>{this.props.projectDescription}</CardText> */}
+						{/* <Button data-toggle="collapse" data-target='#card-text'>Show More</Button> */}
+						{/* <CardLink href={this.props.projectLink}>View Project</CardLink> */}
+						<ProjectModal 
+							modalLink={this.props.projectLink}
+							modalDescription={this.props.projectDescription}
+							modalName={this.projectTitle}
+						/>
 					</CardBody>
 			</Card>
 		)
