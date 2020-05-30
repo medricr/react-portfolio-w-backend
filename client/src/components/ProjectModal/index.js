@@ -14,8 +14,8 @@ const ProjectModal = (props) => {
 	const toggle = () => setModal(!modal);
 
 	return (
-		<div>
-			<Button onClick={toggle}>View More</Button>
+		<div id="content-modal">
+			<Button onClick={toggle} id="modal-button">View More</Button>
 			<Modal isOpen={modal} toggle={toggle}>
 				<ModalHeader toggle={toggle}>{modalName}</ModalHeader>
 				<ModalBody>

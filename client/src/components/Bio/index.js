@@ -19,22 +19,15 @@ class Bio extends React.Component {
 							{/* Technical about me secion, skills, interests, etc */}
 							<img href="#" src={skelly} alt='placeholder' height='300' width='300' className="rounded float-left mr-3"/>
 							<p>
-								Welcome! My name is Medric Riley, a San Francisco Bay Area based Web developr blablablahblahablhabhlbha
+								Welcome! My name is Medric Riley, a Oakland based Web developr currently looking for full time or partial employment in the San Francisco Bay Area. 
 							</p>
 							<br />
 							<p>
 								My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. 
 							</p>
 							<br />
-							{/* More personality driven aboutme section, interests, hobbies, goals, etc */}
-							<hr />
-							<img href="#" src={skelly} alt='placeholder' height='300' width='300' className='rounded float-right mr-3' />
 							<p>
-								When not working on personal projects, or attempting to learn a new skill (you what?)
-							</p>
-							<br />
-							<p>
-								Sed dapibus, quam eu interdum posuere, elit nibh accumsan odio, commodo ultricies elit elit sed sem. Vivamus maximus aliquet consectetur. Praesent eget dapibus tellus. Cras vel turpis eu sapien venenatis tincidunt non at nulla. Integer mollis, eros at aliquet iaculis, velit nunc egestas erat, in eleifend erat nisl vel mauris. Aenean sollicitudin est at metus laoreet, at dapibus dolor vehicula. Pellentesque finibus augue a mattis vehicula. Etiam nec nibh eget risus posuere sollicitudin in eget turpis. Integer porttitor mattis pulvinar.
+								Navigating to the Projects page via the navbar above will allow you to see some of my completed work, both assigned coursework and personal projects. You can find my Github and Linkedin pages below. Feel free to use the contact form to send me an email. I look forward to hearing from you!
 							</p>
 						</div>
 					</div>

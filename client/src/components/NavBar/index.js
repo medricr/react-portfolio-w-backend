@@ -19,15 +19,15 @@ class NavBar extends React.Component {
 			<Navbar dark expand="md" className="navbar-static-top">
 				<div className='row upper-row'>
 					<div className='col-md-12'>
-						<NavbarBrand className="nav-link" href="/#"><strong>Medric Riley</strong></NavbarBrand>
+						<NavbarBrand className="nav-link" href="/#"><h1><strong>Medric Riley</strong></h1></NavbarBrand>
 					</div>	
 				</div>
 				<div className='row lower-row'>
 					<div className='col-md-6'>
-						<Link className='nav-link' to='/projects'>Projects</Link>
+						<Link className='nav-link' id="projects-link" to='/projects'><h4>Projects</h4></Link>
 					</div>
 					<div className='col-md-6'>
-						<Link className='nav-link' to="/contact">Contact</Link>
+						<Link className='nav-link' id="contact-link" to="/contact"><h4>Contact</h4></Link>
 					</div>
 				</div>				
 			</Navbar>
