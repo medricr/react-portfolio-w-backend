@@ -15,6 +15,7 @@ $dark-skyblue: #76BED0;
 
 .App {
   /* text-align: center; */
+	background-color: $rich-black;
 }
 
 .App-logo {
@@ -36,6 +37,42 @@ $dark-skyblue: #76BED0;
   color: #09D3AC;
 }
 
+// FORMATTING
 #projectRow {
-	margin-bottom: 50px;
+	margin-bottom: 35px;
+}
+
+.nav-link, .nav-link:hover {
+	color: $white;
+
+}
+
+
+
+.navbar {
+	text-align: center;
+	background-color: $rich-black;
+	display: block;
+
+}
+
+.btn {
+	background-color: $independance;
+}
+
+.jumbotron {
+	background-color: $turqoise-green;
+	// border: 1px solid $orange-soda;
+}
+
+.navbar-brand {
+	color: $white;
+	padding-left: 8px;
+	// margin-left: 100px;
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+
+.dropdown-menu {
+	background-color: $independance;
 }
