@@ -9,16 +9,12 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //Serve up static assets (usually on heroku)
-if(process.env.NODE_ENV === 'production'){
-	app.use(express.static("build"));
-
-	app.get("*", (req,res)=> {
-		res.sendFile(path.resolve(__dirname), "build", "index.html")
-	})
+if (process.env.NODE_ENV) {
+	app.use(express.static("client/build"));
 }
 
 // This application contains a single post route which handles the packaging and sending of emails from the contact form
-app.post('/contact', (req, res)=> {
+app.post('/contact', (req, res) => {
 
 	console.log("POST ROUTE HIT")
 
@@ -44,7 +40,7 @@ app.post('/contact', (req, res)=> {
 		console.log("sending mail...");
 		if (error) {
 			// res.json(error);
-			console.log("Error: " +  error)
+			console.log("Error: " + error)
 		} else {
 			// res.json('Email sent: ' + info.response);
 			console.log("email sent ho")
@@ -52,6 +48,21 @@ app.post('/contact', (req, res)=> {
 		}
 	});
 });
+
+
+app.get("*", function (req, res) {
+	var directory;
+	if (process.env.NODE_ENV) {
+		directory = "build";
+	} else {
+		directory = "public";
+	}
+
+	res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
+	// res.sendFile(path.join(__dirname, `./client/build/index.html`));
+
+});
+
 
 // Spin up server
 app.listen(PORT, ()=> {
