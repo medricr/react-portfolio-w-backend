@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
+//Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV) {
+	app.use(express.static("client/build"));
+}
 // This application contains a single post route which handles the packaging and sending of emails from the contact form
 app.post('/contact', (req, res)=> {
 
