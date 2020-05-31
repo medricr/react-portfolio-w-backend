@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -8,10 +9,11 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV) {
-	app.use(express.static("client/build"));
-}
-app.get("*", function (req, res) {
+// if (process.env.NODE_ENV) {
+// 	app.use(express.static("client/build"));
+// }
+
+app.get("/*", function (req, res) {
 	var directory;
 	if (process.env.NODE_ENV) {
 		directory = "build";
@@ -22,6 +24,7 @@ app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
 
 });
+
 // This application contains a single post route which handles the packaging and sending of emails from the contact form
 app.post('/contact', (req, res)=> {
 
@@ -46,9 +49,12 @@ app.post('/contact', (req, res)=> {
 	transporter.sendMail(mailOptions, function (error, info) {
 		console.log("sending mail...");
 		if (error) {
-			res.json(error);
+			// res.json(error);
+			console.log(error)
 		} else {
-			res.json('Email sent: ' + info.response);
+			// res.json('Email sent: ' + info.response);
+			console.log("email sent ho")
+			// window.location.hr ef='/'
 		}
 	});
 });

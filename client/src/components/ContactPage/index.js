@@ -32,6 +32,7 @@ class ContactPage extends React.Component {
 			email_body: this.state.email_body
 		}).then((result)=> {
 			console.log(result);
+			// window.location.href='/'
 		})
 	}
 
