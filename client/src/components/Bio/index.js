@@ -19,7 +19,7 @@ class Bio extends React.Component {
 							{/* Technical about me secion, skills, interests, etc */}
 							<img href="#" src={skelly} alt='placeholder' height='300' width='300' className="rounded float-left mr-3"/>
 							<p>
-								Welcome! My name is Medric Riley, a Oakland based Web developr currently looking for full time or partial employment in the San Francisco Bay Area. 
+								Welcome! My name is Medric Riley, a Oakland based Web developer currently looking for full time or partial employment in the San Francisco Bay Area. 
 							</p>
 							<br />
 							<p>
