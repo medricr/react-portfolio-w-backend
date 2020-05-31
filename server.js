@@ -50,7 +50,7 @@ app.post('/contact', (req, res)=> {
 		console.log("sending mail...");
 		if (error) {
 			// res.json(error);
-			console.log(error)
+			console.log("Error: " + error)
 		} else {
 			// res.json('Email sent: ' + info.response);
 			console.log("email sent ho")
