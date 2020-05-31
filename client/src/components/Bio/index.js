@@ -33,14 +33,13 @@ class Bio extends React.Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-sm-4">
-						LINK TO LINKEDIN PROFILE GOES HERE
+					<div className="col-sm-6">
+						<i className='fa fa-linkedin-square' />{' '}
+						<a href="https://www.linkedin.com/in/medric-riley-a0b35017b/">LinkedIn</a>
 					</div>
-					<div className="col-sm-4">
-						LINK TO GITHUB PAGE GOES HERE
-					</div>
-					<div className="col-sm-4">
-						THIRD LINK GOES HERE MAYBE???
+					<div className="col-sm-6">
+						<i className='fa fa-github' />{' '}
+						<a href="https://github.com/medricr">GitHub</a>
 					</div>
 				</div>
 			</div>

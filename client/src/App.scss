@@ -57,6 +57,12 @@ $dark-skyblue: #76BED0;
 	margin: 0 auto;
 	display: block;
 }
+a, a:hover {
+	color: white;
+}
+.fa {
+	color: white;
+}
 .nav-link, .nav-link:hover {
 	color: $white;
 
