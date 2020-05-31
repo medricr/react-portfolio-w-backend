@@ -26,6 +26,7 @@ class ContactPage extends React.Component {
 
 	// sendEmail function
 	sendEmail = () => {
+		console.log("sendemail button hit")
 		API.sendEmail({
 			sender_email: this.state.sender_email,
 			email_subject: this.state.email_subject,
@@ -62,7 +63,7 @@ class ContactPage extends React.Component {
 									<small id='body-help' className='form-text text-muted'>Please include any information you would like to be sent in the final email</small>
 								</div>
 								{/* onclick take information from form, package it into request, and hit the nodemailer route */}
-								<button type='submit' className='btn btn-primary' onClick={this.sendEmail}>Send</button>
+								<button type='button' className='btn btn-primary' onClick={this.sendEmail}>Send</button>
 							</form>
 						</div>
 					</div>

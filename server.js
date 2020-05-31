@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV) {
 	app.use(express.static("client/build"));
 }
 
@@ -22,11 +22,14 @@ app.get("*", function (req, res) {
 	}
 
 	res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
+	// res.sendFile(path.join(__dirname, `./client/build/index.html`));
 
 });
 
 // This application contains a single post route which handles the packaging and sending of emails from the contact form
 app.post('/contact', (req, res)=> {
+
+	console.log("POST ROUTE HIT")
 
 	// Here we set up the transporter that comes with nodemailer, giving our gmail credentials and allowing the package to send emails using the gmail server
 	const transporter = nodemailer.createTransport({
