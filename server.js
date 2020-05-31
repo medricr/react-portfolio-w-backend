@@ -11,6 +11,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 if (process.env.NODE_ENV) {
 	app.use(express.static("client/build"));
 }
+app.get("*", function (req, res) {
+	var directory;
+	if (process.env.NODE_ENV) {
+		directory = "build";
+	} else {
+		directory = "public";
+	}
+
+	res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
+
+});
 // This application contains a single post route which handles the packaging and sending of emails from the contact form
 app.post('/contact', (req, res)=> {
 
