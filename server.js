@@ -51,15 +51,15 @@ app.post('/contact', (req, res) => {
 
 
 app.get("*", function (req, res) {
-	var directory;
-	if (process.env.NODE_ENV) {
-		directory = "build";
-	} else {
-		directory = "public";
-	}
+	// var directory;
+	// if (process.env.NODE_ENV) {
+	// 	directory = "build";
+	// } else {
+	// 	directory = "public";
+	// }
 
-	res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
-	// res.sendFile(path.join(__dirname, `./client/build/index.html`));
+	// res.sendFile(path.join(__dirname, `./client/${directory}/index.html`));
+	res.sendFile(path.join(__dirname, `./client/build/index.html`));
 
 });
 
