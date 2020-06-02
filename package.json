@@ -19,14 +19,14 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "set NODE_ENV=production && nodemon server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "win:prod": "set NODE_ENV=production && nodemon server.js",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "begin": "npm run build && node server.js",
+		"start": "node server.js",
+		"start:original": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+		"start:prod": "node server.js",
+		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+		"client": "cd client && npm run start",
+		"install": "cd client && npm install",
+		"build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,5 @@
   "bugs": {
     "url": "https://github.com/medricr/react-portfolio-w-backend/issues"
   },
-  "homepage": "https://github.com/medricr/react-portfolio-w-backend#readme",
-	"proxy": "http://localhost:3001"
+  "homepage": "https://github.com/medricr/react-portfolio-w-backend#readme"
 }
