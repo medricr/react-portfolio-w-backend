@@ -32,8 +32,8 @@ class ContactPage extends React.Component {
 			email_subject: this.state.email_subject,
 			email_body: this.state.email_body
 		}).then((result)=> {
+			console.log("sendEmail frontend func exited")
 			console.log(result);
-			// window.location.href='/'
 		})
 	}
 

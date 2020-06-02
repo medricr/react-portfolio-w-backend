@@ -19,7 +19,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "set NODE_ENV=production && nodemon server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
@@ -38,5 +37,6 @@
   "bugs": {
     "url": "https://github.com/medricr/react-portfolio-w-backend/issues"
   },
-  "homepage": "https://github.com/medricr/react-portfolio-w-backend#readme"
+  "homepage": "https://github.com/medricr/react-portfolio-w-backend#readme",
+	"proxy": "http://localhost:3001"
 }
