@@ -5,7 +5,7 @@ module.exports = function(app){
 	app.use(
 		'/contact',
 		createProxyMiddleware({
-			targer: 'http://localhost:3001',
+			target: 'http://localhost:3001',
 			changeOrigin: true
 		})
 	)
