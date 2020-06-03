@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProjectModal from '../ProjectModal';
 
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardLink, Button} from 'reactstrap';
+import {Card, CardImg, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 
 class ProjectCard extends React.Component {
 	render() {
