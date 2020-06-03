@@ -28,7 +28,7 @@ app.post('/contact', function (req, res) {
 
 	const mailOptions = {
 		from: req.body.sender_email,
-		to: 'medric.porfolio@gmail.com',
+		to: process.env.EMAIL,
 		subject: req.body.email_subject + ": from " + req.body.sender_email,
 		text: req.body.email_body
 	};
@@ -36,13 +36,13 @@ app.post('/contact', function (req, res) {
 	transporter.sendMail(mailOptions, function (error, info) {
 		console.log("sending mail...");
 		if (error) {
-			// res.json(error);
 			console.log("Error: " + error)
 		} else {
-			console.log("email sent: ", info)
-		
+			console.log("email sent via server.js: ", info)
+			// res.json('email sent via server.js: ', info)
 		}
 	});
+	res.json("sent boi")
 });
 
 
