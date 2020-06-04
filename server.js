@@ -6,21 +6,17 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const authCodes = require('./auth.json');
-var email = '';
-var pword = '';
+// const authCodes = require('./auth.json');
+// var email = '';
+// var pword = '';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 //Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV) {
 	app.use(express.static("client/build"));
-	email = process.env.EMAIL;
-	pword = process.env.PWORD
-} else {
-	email = authCodes.EMAIL;
-	pword = authCodes.PWORD
-}
+
+} 
 
 app.post('/contact', function (req, res) {
 
@@ -30,8 +26,8 @@ app.post('/contact', function (req, res) {
 	const transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: email,
-			pass: pword
+			user: process.env.EMAIL,
+			pass: process.env.PWORD
 		}
 	});
 
