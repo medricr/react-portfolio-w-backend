@@ -15,8 +15,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 //Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV) {
 	app.use(express.static("client/build"));
-	email = process.env.NODE_ENV;
-	pword = process.env.NODE_ENV
+	email = process.env.EMAIL;
+	pword = process.env.PWORD
 } else {
 	email = authCodes.EMAIL;
 	pword = authCodes.PWORD
