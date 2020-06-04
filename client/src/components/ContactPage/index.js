@@ -1,39 +1,28 @@
 import React from 'react';
-
 import API from '../../API';
 
-
-
 class ContactPage extends React.Component {
-
-	// state goes here
 	// sender email, message body, message subject will all be sent in API request
 	state = {
 		sender_email: "",
 		email_subject:"",
 		email_body: ""		
 	}
-
 	// component funcitons go here
 	handleInputChange = (event) => {
 		let name = event.target.name;
 		const value = event.target.value;
-
 		this.setState({
 			[name]: value
 		});
 	}
-
 	// sendEmail function
 	sendEmail = () => {
-		console.log("sendemail button hit")
 		API.sendEmail({
 			sender_email: this.state.sender_email,
 			email_subject: this.state.email_subject,
 			email_body: this.state.email_body
-		}).then((result)=> {
-			console.log("sendEmail frontend func exited")
-			console.log(result);
+		}).then(()=> {
 			window.location.href='/'
 		})
 	}

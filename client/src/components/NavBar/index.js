@@ -2,9 +2,7 @@ import React from 'react';
 import {Navbar, NavbarBrand} from 'reactstrap';
 import {Link} from 'react-router-dom';
 
-
 class NavBar extends React.Component {
-
 	state = {
 		isOpen: false
 	};

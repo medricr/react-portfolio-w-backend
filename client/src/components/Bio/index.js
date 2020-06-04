@@ -1,15 +1,10 @@
 import React from 'react';
-
-// import {Jumbotron, Container, Row, Col} from 'reactstrap';
-
 import skelly from '../../assets/Skelly.png'
-
 
 class Bio extends React.Component {
 
 	render() {
 		return (
-			
 			<div className="container">
 				<div className="row">
 					<div className="col-md-12">
