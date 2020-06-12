@@ -42,13 +42,6 @@ $dark-skyblue: #76BED0;
 	margin-bottom: 35px;
 }
 
-#projects-link {
-	// margin-left: 50px;
-}
-#contact-link {
-	// margin-right: 50px;
-}
-
 #card-title {
 	text-align: center;
 }
@@ -57,6 +50,7 @@ $dark-skyblue: #76BED0;
 	margin: 0 auto;
 	display: block;
 }
+
 a, a:hover {
 	color: white;
 }
@@ -87,6 +81,7 @@ a, a:hover {
 .jumbotron {
 	background-color: $turqoise-green;
 	// border: 1px solid $orange-soda;
+	padding: 32px;
 }
 
 .navbar-brand {

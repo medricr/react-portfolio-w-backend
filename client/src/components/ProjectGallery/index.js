@@ -43,6 +43,7 @@ class ProjectGallery extends React.Component {
 										projectTitle="LIRI"
 										projectSubtitle="An API based application which uses the command line to execute several differnt commands"
 										projectDescription="This simple command line application uses several different APIs; Spotify, Bandsintown, and the OMDB, to return information about movies, songs, or bands that the user enters. Using a set of pre-defined commands, the user can return the top five results from spotify when searching a song, the next five shows that a band is playing, or the top result from the OMDB. In addition, the applicaiton can read a command from a text file and execute that command."
+										projectLink="https://github.com/medricr/LIRI_Bot"
 										projectImage={speaker}
 									/>
 								</div>

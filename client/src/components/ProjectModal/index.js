@@ -2,15 +2,13 @@ import React, {useState} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const ProjectModal = (props) => {
-
 	const {
 		modalLink,
 		modalDescription,
 		modalName
 	} = props;
-
+	// Set up modal
 	const [modal, setModal] = useState(false);
-
 	const toggle = () => setModal(!modal);
 
 	return (
