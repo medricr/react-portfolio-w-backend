@@ -1,5 +1,6 @@
 import React from 'react';
-import skelly from '../../assets/Skelly.png'
+// import skelly from '../../assets/Skelly.png'
+import headshot from '../../assets/headshot_resize.jpg';
 
 const Bio = () => {
 
@@ -11,7 +12,7 @@ const Bio = () => {
 						<h1>About Me</h1>
 						<hr/>
 						{/* Technical about me secion, skills, interests, etc */}
-						<img href="#" src={skelly} alt='placeholder' height='300' width='300' className="rounded float-left mr-3"/>
+						<img href="#" src={headshot} alt='placeholder' height='280px' className="rounded float-left mr-3"/>
 						<p>
 							Welcome! My name is Medric Riley, a Oakland based Web developer currently looking for full time or partial employment in the San Francisco Bay Area. 
 						</p>

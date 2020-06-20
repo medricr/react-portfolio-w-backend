@@ -38,19 +38,22 @@ class ContactPage extends React.Component {
 								<div className='form-group'>
 									<label htmlFor='sender_email'>Email Address</label>
 									<input type='email' className='form-control' id='sender_email' name='sender_email' placeholder='Enter your Email Adress' onChange={this.handleInputChange}/>
-									<small id='email-help' className='form-text text-muted'>This is the email address which will be sed to reply to your message</small>
+
+									{/* <small id='email-help' className='form-text text-muted'>This is the email address which will be used to reply to your message</small> */}
 								</div>
 								{/* Sender subject email input */}
 								<div className='form-group'>
 									<label htmlFor='email_subject'>Subject</label>
 									<input type='text' className='form-control' id='email_subject' name='email_subject' placeholder='Email Subject' onChange={this.handleInputChange} />
-									<small id='subject-help' className='form-text text-muted'>This subject will be placed in the subject field of the email</small>
+
+									{/* <small id='subject-help' className='form-text text-muted'>This subject will be placed in the subject field of the email</small> */}
 								</div>
 								{/* Sender body email input */}
 								<div className='form-group'>
 									<label htmlFor='email_body'>Body</label>
 									<textarea type='text' className='form-control' id='email_body' name='email_body' placeholder='Email Body' rows='5' onChange={this.handleInputChange}/>
-									<small id='body-help' className='form-text text-muted'>Please include any information you would like to be sent in the final email</small>
+
+									{/* <small id='body-help' className='form-text text-muted'>Please include any information you would like to be sent in the final email</small> */}
 								</div>
 								{/* onclick take information from form, package it into request, and hit the nodemailer route */}
 								<button type='button' className='btn btn-primary' onClick={this.sendEmail}>Send</button>
