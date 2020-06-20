@@ -14,18 +14,10 @@ class ProjectGallery extends React.Component {
 				<div className="row">
 					<div className="col-md-12">
 						<div className="jumbotron rounded mt-5">
-							<div className='row' id="projectRow">
+							{/* <div className='row' id="projectRow">
 								<div className='col-md-2' />
 								
-								<div className="col-md-4">
-									<ProjectCard
-										projectTitle="MERN Boilerplate"
-										projectSubtitle="A set of boilerplate code for a MERN stack, with additional basic features."
-										projectDescription="This set of code is designed as a jumping off point for a full stack web application, and serves as a starter for any app which utilizes a MongoDB database, Express, React, and Node. In addition, the project contains a simple user authentication system using Passport.js, and includes API routes for the creation, update, retrieval, and deletion of simple 'notes', which are tied to the user's profile via collection association in MongoDB."
-										projectLink="https://mern-boilerplate-project.herokuapp.com/"
-										projectImage={note}
-									/>
-								</div>
+								
 								<div className="col-md-4">
 									<ProjectCard
 										projectTitle="MongoDB Web Scraper"
@@ -36,9 +28,9 @@ class ProjectGallery extends React.Component {
 									/>
 								</div>
 								<div className='col-md-2' />
-							</div>
+							</div> */}
 							<div className='row'>
-								<div className='col-md-2' />
+								{/* <div className='col-md-2' /> */}
 								<div className='col-md-4'>
 									<ProjectCard 
 										projectTitle="LIRI"
@@ -50,6 +42,15 @@ class ProjectGallery extends React.Component {
 								</div>
 								<div className="col-md-4">
 									<ProjectCard
+										projectTitle="MERN Boilerplate"
+										projectSubtitle="A set of boilerplate code for a MERN stack, with basic user authentication included."
+										projectDescription="This set of code is designed as a jumping off point for a full stack web application, and serves as a starter for any app which utilizes a MongoDB database, Express, React, and Node. In addition, the project contains a simple user authentication system using Passport.js, and includes API routes for the creation, update, retrieval, and deletion of simple 'notes', which are tied to the user's profile via collection association in MongoDB."
+										projectLink="https://mern-boilerplate-project.herokuapp.com/"
+										projectImage={note}
+									/>
+								</div>
+								<div className="col-md-4">
+									<ProjectCard
 										projectTitle="Inventory Manager"
 										projectSubtitle="A Node.js app with works with SQL preform create, read, update, and delete funcitons with an example inventory."
 										projectDescription="This application allows the user to access a mySQL database from three different viewpoints. The customer file allows the user to 'purhcase' items, calculating the total cost of the order and updating the databse to reflect the purchase. The Manager file allows the user to 'restock' items in the database, as well as add new ones. Finally, the Supervisor file allows the user to view net sales of the items in the databse by department."
@@ -57,7 +58,7 @@ class ProjectGallery extends React.Component {
 										projectImage={keyboard}
 									/>
 								</div>	
-								<div className='col-md-2' />							
+								{/* <div className='col-md-1' />							 */}
 							</div>
 						</div>
 					</div>
