@@ -26,7 +26,7 @@ app.post('/contact', function (req, res) {
 	// Set properties of message to be sent
 	const mailOptions = {
 		from: req.body.sender_email,
-		to: email,
+		to: process.env.EMAIL,
 		subject: req.body.email_subject + ": from " + req.body.sender_email,
 		text: req.body.email_body
 	};
