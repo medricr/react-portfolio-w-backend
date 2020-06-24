@@ -16,7 +16,22 @@ class ProjectGallery extends React.Component {
 					<div className="col-md-12">
 						<div className="jumbotron rounded mt-5">
 							<div className='row' id="projectRow">
+								{/* <div className='col-md-2' />
+								
+								
+								<div className="col-md-4">
+									<ProjectCard
+										projectTitle="EDD Progress Tracker"
+										projectSubtitle="A logging application to track ones progress by call with the EDD phone lines. "
+										projectDescription="Half joke, half proof of concept, this project uses the previous set of MERN boilerplate code as a starting point to create a simple logging app which the user can use to track their progress on the phone with the EDD. Complete with create, read, update, and delete functionality for each day of calls, these collections are tied to each individual user's account."
+										projectLink="https://edd-progress-tracker.herokuapp.com/"
+										projectImage={checklist}
+									/>
+								</div> */}
 								<div className='col-md-2' />
+							</div>
+							<div className='row'>
+								{/* <div className='col-md-2' /> */}
 								<div className="col-md-4">
 									<ProjectCard
 										projectTitle="MERN Boilerplate"
@@ -26,20 +41,6 @@ class ProjectGallery extends React.Component {
 										projectImage={note}
 									/>
 								</div>
-								
-								<div className="col-md-4">
-									<ProjectCard
-										projectTitle="EDD Progress Tracker"
-										projectSubtitle="A logging application to track ones progress by call with the EDD phone lines. "
-										projectDescription="Half joke, half proof of concept, this project uses the previous set of MERN boilerplate code as a starting point to create a simple logging app which the user can use to track their progress on the phone with the EDD. Complete with create, read, update, and delete functionality for each day of calls, these collections are tied to each individual user's account"
-										projectLink="https://edd-progress-tracker.herokuapp.com/"
-										projectImage={checklist}
-									/>
-								</div>
-								<div className='col-md-2' />
-							</div>
-							<div className='row'>
-								<div className='col-md-2' />
 								<div className='col-md-4'>
 									<ProjectCard 
 										projectTitle="LIRI"
@@ -59,7 +60,7 @@ class ProjectGallery extends React.Component {
 										projectImage={keyboard}
 									/>
 								</div>	
-								<div className='col-md-2' />							
+								{/* <div className='col-md-2' />							 */}
 							</div>
 						</div>
 					</div>
