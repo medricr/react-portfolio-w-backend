@@ -60,6 +60,7 @@ class ProjectGallery extends React.Component {
 										projectImage={keyboard}
 									/>
 								</div>	
+
 								{/* <div className='col-md-2' />							 */}
 							</div>
 						</div>

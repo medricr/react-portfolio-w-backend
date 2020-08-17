@@ -18,7 +18,7 @@ const Bio = () => {
 						</p>
 						<br />
 						<p>
-							My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. 
+							My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. In addition to this, I have completed a full-stack web development course from the UC Davis Continuing & Professional Education extension center.
 						</p>
 						<br />
 						<p>
@@ -28,14 +28,22 @@ const Bio = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-sm-6">
+				
+				<div className="col-sm-4 col-lg-4">
 					<i className='fa fa-linkedin-square' />{' '}
 					<a href="https://www.linkedin.com/in/medric-riley-a0b35017b/">LinkedIn</a>
 				</div>
-				<div className="col-sm-6">
+		
+				<div className="col-sm-4 col-lg-4">
 					<i className='fa fa-github' />{' '}
 					<a href="https://github.com/medricr">GitHub</a>
 				</div>
+
+				<div className="col-sm-4 col-lg-4">
+					<i className="fa fa-file-o" />{' '}
+					<a href="http://t.cred.ly/l/584737bb-2595-4cba-98c5-438e1c3431a4">Certificate of Completion</a>
+				</div>
+
 			</div>
 		</div>
 	)
