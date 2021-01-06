@@ -4,7 +4,7 @@
   "description": "react app w/ backend server",
   "main": "server.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.0",
     "concurrently": "^5.2.0",
     "http-proxy-middleware": "^1.0.4",
