@@ -1,10 +1,8 @@
 import React from 'react';
 // IMAGES
 import keyboard from '../../assets/keyboard.jpg'; //Photo by Caspar Camille Rubin on Unsplash
-// import record from '../../assets/record.jpg'; //Photo by Ivan Dorofeev on Unsplash
 import note from '../../assets/stickynote.jpg'; //Photo by Paper Textures on Unsplash
 import speaker from '../../assets/speaker.jpg'; //Photo by Josh Sorenson on Unsplash
-import checklist from '../../assets/checklist.jpg'; //Photo by Glenn Carsten-Peters on Unsplash
 import dice from '../../assets/dice2.jpg'; //Photo by Riho Kroll on Unsplash
 import parchment from '../../assets/parchment.jpg'; //Photo by Mark Rasmuson Unsplash
 // COMPONENTS
@@ -17,9 +15,7 @@ class ProjectGallery extends React.Component {
 				<div className="row">
 					<div className="col-md-12">
 						<div className="jumbotron rounded mt-5">
-							{/* <div className='row' id="projectRow">
-								<div className='col-md-2' />
-							</div> */}
+						
 							<div className='row'>
 								<div className="col-md-4">
 									<ProjectCard
@@ -30,6 +26,7 @@ class ProjectGallery extends React.Component {
 										projectImage={note}
 									/>
 								</div>
+
 								<div className='col-md-4'>
 									<ProjectCard
 										projectTitle='TTRPG Quest Generator'
@@ -39,20 +36,18 @@ class ProjectGallery extends React.Component {
 										projectImage={parchment}
 									/>
 								</div>
+
 								<div className='col-md-4'>
 									<ProjectCard
 										projectTitle='Initiative Bag'
 										projectSubtitle='A virtual initiative generator and dice roller for the tabletop role playing game, "Troika!"'
-										projectDescription='While many tabletop games use an initiative system which has each player and monster going in a defined sequence, Troika! uses a system which relies much more on random chance and luck. Each player is designated a color of token, which when drawn from a bag, indicates that it is that players turn to act. This application simulates that, as well as uses socket.io to allow multiple players to use the site concurrently.'
+										projectDescription='While many tabletop games use an initiative system which has each player and monster going in a defined sequence, Troika! uses a system which relies much more on random chance and luck. Each player is designated a token with a unique color, which when drawn from a bag, indicates that it is that players turn to act. This application simulates that, as well as uses socket.io to allow multiple players to use the site concurrently, seeing eachothers tokens and using a dice roller.'
 										projectLink="https://initiative-bag.herokuapp.com/"
 										projectImage={dice}
 									/>
 								</div>
-
-								
-
-								{/* <div className='col-md-2' />							 */}
 							</div>
+
 							<div className='row'>
 								<div className='col-md-2'>
 									<h1>   </h1>

@@ -17,6 +17,7 @@ if (process.env.NODE_ENV) {
 app.post('/contact', function (req, res) {
 	// Set up transporter using enviroment variables pulled down from heroku
 	const transporter = nodemailer.createTransport({
+		// PLUG IN PROCESS VARS
 		service: 'gmail',
 		auth: {
 			user: process.env.EMAIL,
@@ -26,7 +27,7 @@ app.post('/contact', function (req, res) {
 	// Set properties of message to be sent
 	const mailOptions = {
 		from: req.body.sender_email,
-		to: process.env.EMAIL_DEST,
+		to: process.env.EMAIL,
 		subject: req.body.email_subject + ": from " + req.body.sender_email,
 		text: req.body.email_body
 	};
