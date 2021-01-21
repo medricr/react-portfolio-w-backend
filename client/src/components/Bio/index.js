@@ -14,15 +14,19 @@ const Bio = () => {
 						{/* Technical about me secion, skills, interests, etc */}
 						<img href="#" src={headshot} alt='placeholder' height='280px' className="rounded float-left mr-3"/>
 						<p>
-							Welcome! My name is Medric Riley, a Oakland based Web developer currently looking for full time or partial employment in the San Francisco Bay Area. 
+							Welcome. My name is Medric Riley, a Davis based Web developer currently looking for full time or partial employment in Northern California. 
 						</p>
 						<br />
 						<p>
-							My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. In addition to this, I have completed a full-stack web development course from the UC Davis Continuing & Professional Education extension center.
+							Professionally, my skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design & implementation, data structures, and assembly language. In addition to this, I have completed a full-stack web development course from the UC Davis Continuing & Professional Education extension center.
 						</p>
 						<br />
 						<p>
-							Navigating to the Projects page via the navbar above will allow you to see some of my completed work, both assigned coursework and personal projects. You can find my Github and Linkedin pages below. Feel free to use the contact form to send me an email. I look forward to hearing from you!
+							Personally, I am a fan of puzzle and games, anything that forces me to think outside the box or in new and interesting ways. In addition to this, years of working in the service industry have given me the experience neccesary to work quickly and efficiently under pressure, while maintaing a standard of professionalism required for communicating with clients and customers.
+						</p>
+						<br />
+						<p>
+							Navigating to the Projects page via the navbar above will allow you to see some of my completed work, both assigned coursework and personal projects. You can find my Github and Linkedin pages below. In addition to this, feel free to use the contact page to send me an email,
 						</p>
 					</div>
 				</div>

@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
 
 	return(
 		<Card>
-			<CardImg top width="100%" src={projectImage} alt="Card Image Cap" />
+			<CardImg top width="100%" height="40%" src={projectImage} alt="Card Image Cap" />
 				<CardBody>
 					<CardTitle id="card-title">{projectTitle}</CardTitle>
 					<hr />

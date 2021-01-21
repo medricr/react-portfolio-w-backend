@@ -5,6 +5,8 @@ import keyboard from '../../assets/keyboard.jpg'; //Photo by Caspar Camille Rubi
 import note from '../../assets/stickynote.jpg'; //Photo by Paper Textures on Unsplash
 import speaker from '../../assets/speaker.jpg'; //Photo by Josh Sorenson on Unsplash
 import checklist from '../../assets/checklist.jpg'; //Photo by Glenn Carsten-Peters on Unsplash
+import dice from '../../assets/dice2.jpg'; //Photo by Riho Kroll on Unsplash
+import parchment from '../../assets/parchment.jpg'; //Photo by Mark Rasmuson Unsplash
 // COMPONENTS
 import ProjectCard from'../ProjectCard';
 
@@ -15,23 +17,10 @@ class ProjectGallery extends React.Component {
 				<div className="row">
 					<div className="col-md-12">
 						<div className="jumbotron rounded mt-5">
-							<div className='row' id="projectRow">
-								{/* <div className='col-md-2' />
-								
-								
-								<div className="col-md-4">
-									<ProjectCard
-										projectTitle="EDD Progress Tracker"
-										projectSubtitle="A logging application to track ones progress by call with the EDD phone lines. "
-										projectDescription="Half joke, half proof of concept, this project uses the previous set of MERN boilerplate code as a starting point to create a simple logging app which the user can use to track their progress on the phone with the EDD. Complete with create, read, update, and delete functionality for each day of calls, these collections are tied to each individual user's account."
-										projectLink="https://edd-progress-tracker.herokuapp.com/"
-										projectImage={checklist}
-									/>
-								</div> */}
+							{/* <div className='row' id="projectRow">
 								<div className='col-md-2' />
-							</div>
+							</div> */}
 							<div className='row'>
-								{/* <div className='col-md-2' /> */}
 								<div className="col-md-4">
 									<ProjectCard
 										projectTitle="MERN Boilerplate"
@@ -42,7 +31,34 @@ class ProjectGallery extends React.Component {
 									/>
 								</div>
 								<div className='col-md-4'>
-									<ProjectCard 
+									<ProjectCard
+										projectTitle='TTRPG Quest Generator'
+										projectSubtitle='A single page application which generates quest hooks for tabletop role playing games.'
+										projectDescription="This application pulls different element from a SQL table, and strings them together to create single sentance quest hooks for use to use in tabletop role playing games. Each time the button is clicked, a new quest hook is generated. Future plans to expand the applicaiton include building out additional tables wtih tense specific elements (past, present, and future), and including different genres other than fantasy."
+										projectLink="https://whatsmyquest.herokuapp.com/"
+										projectImage={parchment}
+									/>
+								</div>
+								<div className='col-md-4'>
+									<ProjectCard
+										projectTitle='Initiative Bag'
+										projectSubtitle='A virtual initiative generator and dice roller for the tabletop role playing game, "Troika!"'
+										projectDescription='While many tabletop games use an initiative system which has each player and monster going in a defined sequence, Troika! uses a system which relies much more on random chance and luck. Each player is designated a color of token, which when drawn from a bag, indicates that it is that players turn to act. This application simulates that, as well as uses socket.io to allow multiple players to use the site concurrently.'
+										projectLink="https://initiative-bag.herokuapp.com/"
+										projectImage={dice}
+									/>
+								</div>
+
+								
+
+								{/* <div className='col-md-2' />							 */}
+							</div>
+							<div className='row'>
+								<div className='col-md-2'>
+									<h1>   </h1>
+								</div>
+								<div className='col-md-4'>
+									<ProjectCard
 										projectTitle="LIRI"
 										projectSubtitle="An API based application which uses the command line to execute different scripts."
 										projectDescription="This simple command line application uses several different APIs; Spotify, Bandsintown, and the OMDB, to return information about movies, songs, or bands that the user enters. Using a set of pre-defined commands, the user can return the top five results from spotify when searching a song, the next five shows that a band is playing, or the top result from the OMDB. In addition, the applicaiton can read a command from a text file and execute that command."
@@ -50,7 +66,7 @@ class ProjectGallery extends React.Component {
 										projectImage={speaker}
 									/>
 								</div>
-								
+
 								<div className="col-md-4">
 									<ProjectCard
 										projectTitle="Inventory Manager"
@@ -60,8 +76,10 @@ class ProjectGallery extends React.Component {
 										projectImage={keyboard}
 									/>
 								</div>	
-
-								{/* <div className='col-md-2' />							 */}
+								<div classNAme='col-md-2'>
+									<h1>   </h1>
+								</div>
+							
 							</div>
 						</div>
 					</div>
