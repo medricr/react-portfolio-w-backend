@@ -42,7 +42,7 @@ class ProjectGallery extends React.Component {
 								<div className='col-md-4'>
 									<ProjectCard
 										projectTitle='Initiative Bag'
-										projectSubtitle='A virtual initiative generator and dice roller for "Troika!", a tabletop role playing game.'
+										projectSubtitle='A virtual initiative generator and dice roller for "Troika!," a tabletop role playing game.'
 										projectDescription='While many tabletop games use an initiative system which has each player and monster going in a defined sequence, Troika! uses a system which relies much more on random chance and luck. Each player is designated tokens with a unique color, which when drawn from a bag, indicates that it is that players turn to act. This application simulates that, as well as uses socket.io to allow multiple players to use the site concurrently, seeing eachothers tokens and using a built in dice roller.'
 										projectLink="https://initiative-bag.herokuapp.com/"
 										projectImage={dice}
@@ -59,7 +59,7 @@ class ProjectGallery extends React.Component {
 									<ProjectCard
 										projectTitle="LIRI"
 										projectSubtitle="An API based application which uses the command line to execute different scripts."
-										projectDescription="This simple command line application uses several different APIs; Spotify, Bandsintown, and the OMDB, to return information about movies, songs, or bands that the user enters. Using a set of pre-defined commands, the user can return the top five results from spotify when searching a song, the next five shows that a band is playing, or the top result from the OMDB. In addition, the applicaiton can read a command from a text file and execute that command."
+										projectDescription="This simple command line application uses several different APIs (Spotify, Bandsintown, and the OMDB), to return information about movies, songs, or bands that the user enters. Using a set of pre-defined commands, the user can return the top five results from Spotify when searching a song, the next five shows that a given band is playing, or the top result from the OMDB. In addition, the application can read a command from a text file and execute that command."
 										projectLink="https://github.com/medricr/LIRI_Bot"
 										projectImage={speaker}
 										buttonText="View on Github"

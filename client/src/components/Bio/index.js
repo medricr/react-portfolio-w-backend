@@ -18,7 +18,7 @@ const Bio = () => {
 						</p>
 						<br />
 						<p>
-							My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and using React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design and implementation, data structures, and assembly language. In addition to this, I have completed a full-stack web development course from the UC Davis Continuing and Professional Education extension center.
+							My skills include HTM5, CSS, jQuery, JavaScript, C, C++, Node.js, MySQL, MongDB, and React.js. I have had experience working both by myself and with teams to build full stack web applications, and have completed courses in algorithm design and implementation, data structures, and assembly language. In addition to this, I have completed a full-stack web development course from the UC Davis Continuing and Professional Education extension center.
 						</p>
 						<br />
 						<p>
