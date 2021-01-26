@@ -5,7 +5,8 @@ const ProjectModal = (props) => {
 	const {
 		modalLink,
 		modalDescription,
-		modalName
+		modalName,
+		buttonText
 	} = props;
 	// Set up modal
 	const [modal, setModal] = useState(false);
@@ -20,7 +21,7 @@ const ProjectModal = (props) => {
 					{modalDescription}
 				</ModalBody>
 				<ModalFooter>
-					<Button href={modalLink} target="_blank"> View Project </Button>{' '}
+					<Button href={modalLink} target="_blank"> {buttonText} </Button>{' '}
 					<Button onClick={toggle}> Close </Button>
 				</ModalFooter>
 			</Modal> 

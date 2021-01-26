@@ -9,7 +9,8 @@ const ProjectCard = (props) => {
 		projectTitle,
 		projectSubtitle,
 		projectLink,
-		projectDescription
+		projectDescription,
+		buttonText
 	} = props;
 
 	return(
@@ -24,6 +25,7 @@ const ProjectCard = (props) => {
 						modalLink={projectLink}
 						modalDescription={projectDescription}
 						modalName={projectTitle}
+						buttonText={buttonText}
 					/>
 				</CardBody>
 		</Card>

@@ -37,21 +37,21 @@ class ContactPage extends React.Component {
 								{/* Sender return email input */}
 								<div className='form-group'>
 									<label htmlFor='sender_email'>Email Address</label>
-									<input type='email' className='form-control' id='sender_email' name='sender_email' placeholder='Enter your Email Adress' onChange={this.handleInputChange}/>
+									<input type='email' className='form-control' id='sender_email' name='sender_email' placeholder='Please enter your return email address' onChange={this.handleInputChange}/>
 
 									{/* <small id='email-help' className='form-text text-muted'>This is the email address which will be used to reply to your message</small> */}
 								</div>
 								{/* Sender subject email input */}
 								<div className='form-group'>
 									<label htmlFor='email_subject'>Subject</label>
-									<input type='text' className='form-control' id='email_subject' name='email_subject' placeholder='Email Subject' onChange={this.handleInputChange} />
+									<input type='text' className='form-control' id='email_subject' name='email_subject' placeholder='' onChange={this.handleInputChange} />
 
 									{/* <small id='subject-help' className='form-text text-muted'>This subject will be placed in the subject field of the email</small> */}
 								</div>
 								{/* Sender body email input */}
 								<div className='form-group'>
 									<label htmlFor='email_body'>Body</label>
-									<textarea type='text' className='form-control' id='email_body' name='email_body' placeholder='Email Body' rows='5' onChange={this.handleInputChange}/>
+									<textarea type='text' className='form-control' id='email_body' name='email_body' placeholder='' rows='5' onChange={this.handleInputChange}/>
 
 									{/* <small id='body-help' className='form-text text-muted'>Please include any information you would like to be sent in the final email</small> */}
 								</div>
